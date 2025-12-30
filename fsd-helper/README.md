@@ -11,36 +11,6 @@ Feature-Sliced Design 아키텍처를 적용한 프론트엔드 프로젝트 개
 - **문서 참조**: 최신 FSD 공식 문서 조회
 - **마이그레이션 지원**: 기존 프로젝트를 FSD로 전환하는 가이드
 
-## 설치 방법
-
-### 방법 1: 로컬 플러그인으로 설치
-
-1. 이 저장소를 클론합니다:
-
-```bash
-git clone <repository-url> fsd-helper
-```
-
-2. Claude Code 프로젝트의 `.claude/settings.json`에 추가합니다:
-
-```json
-{
-  "enabledPlugins": {
-    "fsd-helper@local-fsd": true
-  },
-  "extraKnownMarketplaces": {
-    "local-fsd": {
-      "source": {
-        "source": "directory",
-        "path": "./fsd-helper"
-      }
-    }
-  }
-}
-```
-
-3. Claude Code를 재시작합니다.
-
 ## 사용 방법
 
 ### 커맨드

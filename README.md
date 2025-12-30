@@ -14,6 +14,17 @@ React Flow 라이브러리를 사용한 노드 기반 UI 개발을 지원하는 
 
 자세한 내용은 [reactflow-helper/README.md](./reactflow-helper/README.md)를 참고하세요.
 
+### FSD Helper
+
+Feature-Sliced Design 아키텍처를 적용한 프론트엔드 프로젝트 개발을 지원하는 플러그인입니다.
+
+- FSD 폴더 구조 초기화 및 슬라이스/세그먼트 생성
+- 의존성 규칙 및 구조 검사
+- FSD 공식 문서 조회
+- 기존 프로젝트 마이그레이션 가이드
+
+자세한 내용은 [fsd-helper/README.md](./fsd-helper/README.md)를 참고하세요.
+
 ## 설치 방법
 
 ### 방법 1: 명령어로 마켓플레이스 추가
@@ -29,6 +40,7 @@ Claude Code에서 다음 명령어를 실행합니다:
 ```bash
 # 특정 플러그인 설치
 /plugin install reactflow-helper@jeongsk/claude-skills
+/plugin install fsd-helper@jeongsk/claude-skills
 
 # 또는 대화형으로 설치
 /plugin
@@ -45,7 +57,8 @@ Claude Code에서 다음 명령어를 실행합니다:
 ```json
 {
   "enabledPlugins": {
-    "reactflow-helper@jeongsk-claude-skills": true
+    "reactflow-helper@jeongsk-claude-skills": true,
+    "fsd-helper@jeongsk-claude-skills": true
   },
   "extraKnownMarketplaces": {
     "jeongsk-claude-skills": {
