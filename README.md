@@ -21,11 +21,7 @@ React Flow 라이브러리를 사용한 노드 기반 UI 개발을 지원하는 
 Claude Code에서 다음 명령어를 실행합니다:
 
 ```bash
-# GitHub 저장소인 경우
 /plugin marketplace add jeongsk/claude-skills
-
-# 로컬 디렉토리인 경우
-/plugin marketplace add ./path/to/claude-skills
 ```
 
 마켓플레이스 추가 후 플러그인을 설치합니다:
@@ -49,10 +45,10 @@ Claude Code에서 다음 명령어를 실행합니다:
 ```json
 {
   "enabledPlugins": {
-    "reactflow-helper@jeongsk/claude-skills": true
+    "reactflow-helper@jeongsk-claude-skills": true
   },
   "extraKnownMarketplaces": {
-    "jeongsk/claude-skills": {
+    "jeongsk-claude-skills": {
       "source": {
         "source": "github",
         "repo": "jeongsk/claude-skills"
