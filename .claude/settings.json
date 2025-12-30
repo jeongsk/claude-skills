@@ -6,6 +6,15 @@
   "enabledPlugins": {
     "example-skills@anthropic-agent-skills": true,
     "commit-commands@claude-plugins-official": true,
-    "plugin-dev@claude-plugins-official": true
+    "plugin-dev@claude-plugins-official": true,
+    "reactflow-helper@local-reactflow": true
+  },
+  "extraKnownMarketplaces": {
+    "local-reactflow": {
+      "source": {
+        "source": "directory",
+        "path": "./reactflow-helper"
+      }
+    }
   }
 }
