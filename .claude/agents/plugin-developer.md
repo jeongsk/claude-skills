@@ -1,6 +1,15 @@
 ---
+name: Plugin Developer
 description: Claude Code plugin development specialist for creating commands, agents, hooks, and MCP server configurations
-capabilities: ["plugin creation", "command development", "agent definition", "hook configuration", "MCP integration", "marketplace setup"]
+capabilities:
+  [
+    "plugin creation",
+    "command development",
+    "agent definition",
+    "hook configuration",
+    "MCP integration",
+    "marketplace setup",
+  ]
 ---
 
 # Plugin Developer Agent
@@ -31,21 +40,25 @@ Use this agent when you need to:
 ## Workflow
 
 1. **Gather Requirements**
+
    - What functionality does the plugin need?
    - Which components are required?
    - Target audience (personal/team/public)?
 
 2. **Create Structure**
+
    - Initialize plugin directory with `.claude-plugin/plugin.json`
    - Add required component directories
 
 3. **Implement Components**
+
    - Write command files in `commands/`
    - Define agents in `agents/`
    - Configure hooks in `hooks/hooks.json`
    - Set up MCP servers in `.mcp.json`
 
 4. **Test Locally**
+
    - Create test marketplace
    - Install and verify plugin
    - Iterate on feedback
