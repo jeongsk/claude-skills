@@ -1,0 +1,11 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y @owloops/claude-powerline@latest --style=powerline"
+  },
+  "enabledPlugins": {
+    "example-skills@anthropic-agent-skills": true,
+    "commit-commands@claude-plugins-official": true,
+    "plugin-dev@claude-plugins-official": true
+  }
+}
