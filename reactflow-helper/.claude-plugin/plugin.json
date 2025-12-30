@@ -1,0 +1,18 @@
+{
+  "name": "reactflow-helper",
+  "version": "1.0.0",
+  "description": "React Flow 라이브러리 개발 지원 플러그인 - 최신 문서 참조, 코드 생성, 예제 제공",
+  "author": {
+    "name": "Claude Skills"
+  },
+  "homepage": "https://reactflow.dev",
+  "keywords": [
+    "react-flow",
+    "flowchart",
+    "node-based-ui",
+    "diagram",
+    "react",
+    "typescript"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "jeongsk-claude-skills",
+  "owner": {
+    "name": "jeongsk"
+  },
+  "metadata": {
+    "description": "Claude Code Skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "reactflow-helper",
+      "source": "./reactflow-helper",
+      "description": "React Flow 라이브러리 개발 지원 플러그인"
+    }
+  ]
+}
