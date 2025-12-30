@@ -12,6 +12,11 @@
       "name": "reactflow-helper",
       "source": "./reactflow-helper",
       "description": "React Flow 라이브러리 개발 지원 플러그인"
+    },
+    {
+      "name": "fsd-helper",
+      "source": "./fsd-helper",
+      "description": "Feature-Sliced Design 아키텍처 개발 지원 플러그인"
     }
   ]
 }
