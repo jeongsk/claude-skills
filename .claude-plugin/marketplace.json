@@ -17,6 +17,11 @@
       "name": "fsd-helper",
       "source": "./fsd-helper",
       "description": "Feature-Sliced Design 아키텍처 개발 지원 플러그인"
+    },
+    {
+      "name": "git-workflow",
+      "source": "./git-workflow",
+      "description": "Git 작업 흐름 자동화: 논리적 단위별 커밋 및 푸시"
     }
   ]
 }
