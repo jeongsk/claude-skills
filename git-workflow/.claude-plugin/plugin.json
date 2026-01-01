@@ -1,0 +1,10 @@
+{
+  "name": "git-workflow",
+  "version": "1.0.0",
+  "description": "Git workflow automation: commit and commit-push commands",
+  "author": {
+    "name": "jeongsk"
+  },
+  "license": "MIT",
+  "keywords": ["git", "commit", "push", "automation"]
+}
