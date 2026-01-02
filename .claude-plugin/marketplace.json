@@ -32,6 +32,11 @@
       "name": "concise-output-style",
       "source": "./concise-output-style",
       "description": "짧고 핵심만 전달하는 간결한 output style 플러그인"
+    },
+    {
+      "name": "figma-helper",
+      "source": "./figma-helper",
+      "description": "Figma Dev Mode MCP 도구를 활용한 디자인-코드 변환 지원 플러그인"
     }
   ]
 }

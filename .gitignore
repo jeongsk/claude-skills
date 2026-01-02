@@ -3,3 +3,4 @@
 *.local
 *.local.json
 .serena
+!**/.mcp.json

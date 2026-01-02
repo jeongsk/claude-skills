@@ -1,0 +1,20 @@
+{
+  "name": "figma-helper",
+  "version": "1.0.0",
+  "description": "Figma Dev Mode MCP 도구를 활용한 디자인-코드 변환 지원 플러그인",
+  "author": {
+    "name": "Claude Skills"
+  },
+  "homepage": "https://developers.figma.com/docs/figma-mcp-server",
+  "keywords": [
+    "figma",
+    "design",
+    "mcp",
+    "dev-mode",
+    "design-to-code",
+    "ui",
+    "react",
+    "css"
+  ],
+  "license": "MIT"
+}
