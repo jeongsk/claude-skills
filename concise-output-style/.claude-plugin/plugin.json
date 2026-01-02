@@ -1,0 +1,10 @@
+{
+  "name": "concise-output-style",
+  "version": "1.0.0",
+  "description": "짧고 핵심만 전달하는 간결한 output style 플러그인",
+  "author": {
+    "name": "jeongseok"
+  },
+  "keywords": ["output-style", "concise", "간결"],
+  "outputStyles": "./output-styles/"
+}

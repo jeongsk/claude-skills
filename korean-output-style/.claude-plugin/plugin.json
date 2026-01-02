@@ -1,0 +1,10 @@
+{
+  "name": "korean-output-style",
+  "version": "1.0.0",
+  "description": "한국어로 답변하는 output style 플러그인",
+  "author": {
+    "name": "jeongseok"
+  },
+  "keywords": ["output-style", "korean", "한국어"],
+  "outputStyles": "./output-styles/"
+}

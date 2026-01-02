@@ -22,6 +22,16 @@
       "name": "git-workflow",
       "source": "./git-workflow",
       "description": "Git 작업 흐름 자동화: 논리적 단위별 커밋 및 푸시"
+    },
+    {
+      "name": "korean-output-style",
+      "source": "./korean-output-style",
+      "description": "한국어로 답변하는 output style 플러그인"
+    },
+    {
+      "name": "concise-output-style",
+      "source": "./concise-output-style",
+      "description": "짧고 핵심만 전달하는 간결한 output style 플러그인"
     }
   ]
 }
