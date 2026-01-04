@@ -1,0 +1,11 @@
+{
+  "name": "output-styles",
+  "version": "1.0.0",
+  "description": "Claude Code 출력 스타일 모음 (한국어, 간결한 스타일)",
+  "author": {
+    "name": "jeongsk"
+  },
+  "keywords": ["output-style", "korean", "concise", "한국어", "간결"],
+  "license": "MIT",
+  "outputStyles": "./output-styles/"
+}
