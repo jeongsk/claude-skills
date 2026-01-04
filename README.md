@@ -59,13 +59,14 @@ Figma Dev Mode MCP를 활용한 디자인-코드 변환 지원 플러그인입�
 
 ### 출력 스타일 플러그인
 
-#### Korean Output Style
+#### Output Styles
 
-Claude가 한국어로 답변하도록 하는 출력 스타일 플러그인입니다.
+Claude의 응답 스타일을 커스터마이징하는 플러그인입니다.
 
-#### Concise Output Style
+- **Korean**: 모든 응답을 한국어로 제공
+- **Concise**: 짧고 핵심만 전달하는 간결한 스타일
 
-짧고 핵심만 전달하는 간결한 출력 스타일 플러그인입니다.
+자세한 내용은 [output-styles/README.md](./output-styles/README.md)를 참고하세요.
 
 ## 설치 방법
 
