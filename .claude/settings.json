@@ -4,7 +4,6 @@
     "command": "npx -y @owloops/claude-powerline@latest --style=powerline"
   },
   "enabledPlugins": {
-    "plugin-dev@claude-plugins-official": true,
     "skill-finder@jeongsk-claude-skills": true
   }
 }
