@@ -54,7 +54,7 @@
           ],
           "installation": {
             "commands": [
-              "/plugin marketplace add anthropic/example-skills",
+              "/plugin marketplace add https://github.com/anthropics/anthropic-agent-skills",
               "/plugin install example-skills@anthropic-agent-skills"
             ],
             "note": "설치 후 개별 스킬을 바로 사용할 수 있습니다."
@@ -102,9 +102,9 @@
           ],
           "installation": {
             "commands": [
-              "/plugin marketplace add claude/plugins",
               "/plugin install plugin-dev@claude-plugins-official"
-            ]
+            ],
+            "note": "claude-plugins-official 마켓플레이스는 기본 제공됩니다."
           },
           "useCases": [
             "새로운 Claude Code 플러그인 개발",
@@ -253,7 +253,8 @@
           "displayName": "Awesome Claude Code",
           "description": "커뮤니티가 큐레이션한 Claude Code 리소스 모음",
           "provider": "Community",
-          "repository": "https://github.com/topics/claude-code",
+          "browseUrl": "https://github.com/topics/claude-code",
+          "note": "GitHub 토픽 페이지에서 커뮤니티 프로젝트를 탐색할 수 있습니다",
           "tags": ["community", "resources", "curated-list"],
           "features": [
             {
@@ -290,7 +291,7 @@
       "디자인": ["example-skills"],
       "git": ["commit-commands"],
       "커밋": ["commit-commands"],
-      "commit": ["commit-commands", "code-review"],
+      "commit": ["commit-commands"],
       "pr": ["pr-review-toolkit", "code-review"],
       "리뷰": ["pr-review-toolkit", "code-review"],
       "review": ["pr-review-toolkit", "code-review"],
