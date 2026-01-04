@@ -13,7 +13,7 @@ claude-skills/
 ├── .claude-plugin/marketplace.json  # Marketplace definition
 ├── .claude/                          # Project-level Claude Code config
 │   ├── agents/                       # Project agents (plugin-developer)
-│   ├── skills/                       # Project skills (plugin-creator)
+│   ├── skills/                       # Project skills (creating-plugins)
 │   └── settings.json                 # Plugin settings
 ├── fsd-helper/                       # FSD architecture plugin
 ├── reactflow-helper/                 # React Flow plugin

@@ -95,7 +95,7 @@ figma-helper/
 │   └── plugin.json
 ├── .mcp.json                # MCP 서버 설정
 ├── skills/
-│   └── figma-design/
+│   └── converting-figma-designs/
 │       ├── SKILL.md
 │       └── references/
 │           ├── mcp-tools.md
