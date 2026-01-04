@@ -12,7 +12,6 @@ This is a Claude Code plugin marketplace repository containing multiple plugins 
 claude-skills/
 ├── .claude-plugin/marketplace.json  # Marketplace definition
 ├── .claude/                          # Project-level Claude Code config
-│   ├── agents/                       # Project agents (plugin-developer)
 │   ├── skills/                       # Project skills (plugin-creator)
 │   └── settings.json                 # Plugin settings
 ├── fsd-helper/                       # FSD architecture plugin
@@ -105,10 +104,23 @@ System prompt and behavior instructions.
 
 ## References
 
-- Claude Code Skills Overview: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview.md
-- Get started with Agent Skills in the API: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart.md
-- Skill authoring best practices: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md
-- How to create plugins for Claude Code: https://code.claude.com/docs/en/plugins.md
-- Plugins reference: https://code.claude.com/docs/en/plugins-reference.md
-- Prompt engineering guide: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.md
-- Prompting best practices: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-4-best-practices.md
+All plugin and skill development documentation is available in the `plugin-creator` skill:
+
+```
+.claude/skills/plugin-creator/references/
+├── plugins-guide.md          # Complete plugin creation guide
+├── plugins-reference.md      # Technical schemas and configurations
+├── plugin-structure.md       # Directory layout and plugin.json schema
+├── marketplace.md            # Plugin distribution
+├── commands.md               # Slash command format
+├── agents.md                 # Sub-agent definitions
+├── hooks.md                  # Event handlers
+├── mcp-servers.md            # External tool integration
+├── skills-overview.md        # What skills are and how they work
+├── skills-best-practices.md  # Writing effective skills
+└── skills-schema.md          # SKILL.md format and validation
+```
+
+External documentation:
+- [Claude Code Documentation](https://code.claude.com/docs)
+- [Anthropic Skills Repository](https://github.com/anthropics/skills)

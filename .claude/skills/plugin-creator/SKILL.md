@@ -106,9 +106,19 @@ Review code for quality and best practices.
 
 ## References
 
+### Plugin Development
+- [Plugins Guide](references/plugins-guide.md) - Complete plugin creation guide
+- [Plugins Reference](references/plugins-reference.md) - Technical schemas and configurations
 - [Plugin Structure](references/plugin-structure.md) - Directory layout and plugin.json schema
+- [Marketplace](references/marketplace.md) - Plugin distribution
+
+### Plugin Components
 - [Commands](references/commands.md) - Slash command format
 - [Agents](references/agents.md) - Sub-agent definitions
 - [Hooks](references/hooks.md) - Event handlers
 - [MCP Servers](references/mcp-servers.md) - External tool integration
-- [Marketplace](references/marketplace.md) - Plugin distribution
+
+### Skills Development
+- [Skills Overview](references/skills-overview.md) - What skills are and how they work
+- [Skills Best Practices](references/skills-best-practices.md) - Writing effective skills
+- [Skills Schema](references/skills-schema.md) - SKILL.md format and validation
