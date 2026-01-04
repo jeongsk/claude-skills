@@ -136,4 +136,4 @@ Claude Code에서 다음 명령어를 실행합니다:
 
 ## 라이선스
 
-MIT
+[MIT License](./LICENSE)
