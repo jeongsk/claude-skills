@@ -1,5 +1,5 @@
 ---
-name: find-external-skills
+name: find-skill
 description: Searches and recommends Claude Code skills and plugins from local database and SkillsMP API. Activates when user asks to find skills, search plugins, get recommendations for PDF/Git/code-review/frontend tools, or requests feature-based tool discovery.
 ---
 
