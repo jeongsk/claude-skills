@@ -102,3 +102,11 @@ System prompt and behavior instructions.
 # Install plugin
 /plugin install plugin-name@marketplace-name
 ```
+
+## References
+
+- Claude Code Skills Overview: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview.md
+- Get started with Agent Skills in the API: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart.md
+- Skill authoring best practices: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md
+- How to create plugins for Claude Code: https://code.claude.com/docs/en/plugins.md
+- Prompt engineering overview: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.md
