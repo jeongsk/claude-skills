@@ -67,7 +67,7 @@ React Flow 공식 문서를 조회합니다.
 
 ### 스킬 (자동 활성화)
 
-React Flow 관련 질문을 하면 `reactflow-dev` 스킬이 자동으로 활성화되어 최신 문서를 참조합니다:
+React Flow 관련 질문을 하면 `developing-reactflow-ui` 스킬이 자동으로 활성화되어 최신 문서를 참조합니다:
 
 ```
 "useReactFlow 훅 사용법 알려줘"

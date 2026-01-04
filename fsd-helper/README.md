@@ -71,7 +71,7 @@ FSD 공식 문서를 조회합니다.
 
 ### 스킬 (자동 활성화)
 
-FSD 관련 질문을 하면 `fsd-architecture` 스킬이 자동으로 활성화됩니다:
+FSD 관련 질문을 하면 `applying-fsd-architecture` 스킬이 자동으로 활성화됩니다:
 
 ```
 "FSD에서 features와 entities의 차이가 뭐야?"
@@ -135,7 +135,7 @@ fsd-helper/
 ├── agents/
 │   └── fsd-architect.md
 ├── skills/
-│   └── fsd-architecture/
+│   └── applying-fsd-architecture/
 │       ├── SKILL.md
 │       └── references/
 │           ├── layers.md
