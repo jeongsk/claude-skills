@@ -109,5 +109,6 @@ System prompt and behavior instructions.
 - Get started with Agent Skills in the API: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart.md
 - Skill authoring best practices: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md
 - How to create plugins for Claude Code: https://code.claude.com/docs/en/plugins.md
+- Plugins reference: https://code.claude.com/docs/en/plugins-reference.md
 - Prompt engineering guide: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.md
 - Prompting best practices: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-4-best-practices.md
