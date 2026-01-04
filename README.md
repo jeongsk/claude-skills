@@ -4,7 +4,9 @@ Claude Code 플러그인 및 스킬 모음입니다.
 
 ## 포함된 플러그인
 
-### React Flow Helper
+### 기능 플러그인
+
+#### React Flow Helper
 
 React Flow 라이브러리를 사용한 노드 기반 UI 개발을 지원하는 플러그인입니다.
 
@@ -14,7 +16,7 @@ React Flow 라이브러리를 사용한 노드 기반 UI 개발을 지원하는 
 
 자세한 내용은 [reactflow-helper/README.md](./reactflow-helper/README.md)를 참고하세요.
 
-### FSD Helper
+#### FSD Helper
 
 Feature-Sliced Design 아키텍처를 적용한 프론트엔드 프로젝트 개발을 지원하는 플러그인입니다.
 
@@ -24,6 +26,46 @@ Feature-Sliced Design 아키텍처를 적용한 프론트엔드 프로젝트 개
 - 기존 프로젝트 마이그레이션 가이드
 
 자세한 내용은 [fsd-helper/README.md](./fsd-helper/README.md)를 참고하세요.
+
+#### Git Workflow
+
+Git 워크플로우 자동화 플러그인입니다.
+
+- 논리적 단위별 커밋 생성
+- 커밋 & 푸시 자동화
+- PR 생성까지 원스톱 처리
+
+자세한 내용은 [git-workflow/README.md](./git-workflow/README.md)를 참고하세요.
+
+#### Figma Helper
+
+Figma Dev Mode MCP를 활용한 디자인-코드 변환 지원 플러그인입니다.
+
+- Figma 디자인에서 코드 추출
+- 컴포넌트 구조 분석
+- 스타일 코드 생성
+
+자세한 내용은 [figma-helper/README.md](./figma-helper/README.md)를 참고하세요.
+
+#### Skill Finder
+
+유용한 외부 Claude Code 스킬과 플러그인을 찾아주는 대화형 도우미입니다.
+
+- 로컬 데이터베이스 검색
+- SkillsMP API 실시간 검색
+- 카테고리별 필터링
+
+자세한 내용은 [skill-finder/README.md](./skill-finder/README.md)를 참고하세요.
+
+### 출력 스타일 플러그인
+
+#### Korean Output Style
+
+Claude가 한국어로 답변하도록 하는 출력 스타일 플러그인입니다.
+
+#### Concise Output Style
+
+짧고 핵심만 전달하는 간결한 출력 스타일 플러그인입니다.
 
 ## 설치 방법
 
@@ -90,34 +132,6 @@ Claude Code에서 다음 명령어를 실행합니다:
 /plugin
 ```
 
-
-## 사용 방법
-
-### React Flow Helper 커맨드
-
-| 커맨드                   | 설명                      |
-| ------------------------ | ------------------------- |
-| `/rf-docs [주제]`        | React Flow 공식 문서 조회 |
-| `/rf-node [이름]`        | 커스텀 노드 컴포넌트 생성 |
-| `/rf-edge [이름]`        | 커스텀 엣지 컴포넌트 생성 |
-| `/rf-example [카테고리]` | 예제 코드 조회            |
-| `/rf-setup`              | 프로젝트 초기 설정 가이드 |
-
-### 예시
-
-```bash
-# API 문서 조회
-/rf-docs api
-
-# 커스텀 노드 생성
-/rf-node DatabaseNode --resizable
-
-# 레이아웃 예제 조회
-/rf-example layout dagre
-
-# 프로젝트 설정
-/rf-setup --typescript --tailwind
-```
 
 ## 새 플러그인 추가하기
 
