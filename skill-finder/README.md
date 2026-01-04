@@ -9,9 +9,13 @@ Claude Code 생태계에는 많은 유용한 스킬과 플러그인이 존재합
 ## 특징
 
 - **대화형 검색**: 자연어로 원하는 기능을 설명하면 적합한 스킬 추천
-- **포괄적 데이터베이스**: 공식 스킬 및 커뮤니티 스킬 정보 제공
-- **상세한 정보**: 각 스킬의 기능, 설치 방법, 사용 사례 안내
-- **키워드 검색**: PDF, Git, React 등 키워드로 빠른 검색
+- **2단계 검색 시스템**:
+  - 로컬 큐레이션 데이터베이스 (공식 스킬 우선)
+  - SkillsMP API 실시간 검색 (커뮤니티 스킬)
+- **포괄적 정보**: 공식 스킬부터 최신 커뮤니티 스킬까지
+- **인기도 기반 추천**: SkillsMP stars 수를 기반으로 검증된 스킬 우선 제공
+- **상세한 정보**: 각 스킬의 기능, 설치 방법, 사용 사례, 저장소 링크
+- **키워드 검색**: PDF, Git, React 등 키워드로 빠른 검색 (한글/영어 모두 지원)
 
 ## 설치
 
@@ -61,21 +65,35 @@ Claude Code 생태계에는 많은 유용한 스킬과 플러그인이 존재합
 /find-skills [키워드 또는 설명]
 ```
 
-## 지원하는 스킬 카테고리
+## 검색 소스
 
-### 공식 스킬 (Anthropic)
+### 1. 로컬 큐레이션 데이터베이스
+검증된 공식 스킬과 플러그인 정보를 담은 로컬 데이터베이스:
+
+**공식 스킬 (Anthropic)**
 - **example-skills**: PDF, DOCX, PPTX, XLSX 문서 작업, React 컴포넌트, MCP 빌더 등
 
-### 공식 플러그인
+**공식 플러그인**
 - **plugin-dev**: 플러그인 개발 도구
 - **commit-commands**: Git 커밋 자동화
 - **feature-dev**: 기능 개발 가이드
 - **pr-review-toolkit**: PR 리뷰 자동화
 - **code-review**: 코드 리뷰
 
-### 커뮤니티 리소스
-- GitHub의 claude-code 토픽
-- 커뮤니티 큐레이션 목록
+### 2. SkillsMP API (실시간)
+커뮤니티가 공유하는 최신 스킬을 실시간으로 검색:
+
+- **실시간 검색**: 최신 커뮤니티 스킬 발견
+- **인기도 정렬**: stars 수 기준으로 검증된 스킬 우선 제공
+- **다양한 카테고리**: 개발, 문서, AI, 유틸리티 등
+- **직접 방문**: https://skillsmp.com
+
+### 검색 전략
+
+1. **로컬 우선**: 큐레이션된 공식 스킬을 먼저 검색
+2. **API 보완**: 로컬 DB에 없으면 SkillsMP에서 검색
+3. **병합 결과**: 두 소스의 결과를 합쳐 최적의 추천 제공
+4. **중복 제거**: 같은 스킬이 양쪽에 있으면 하나만 표시
 
 ## 예시
 
@@ -139,9 +157,48 @@ Git 커밋 관련해서 두 가지 좋은 옵션이 있습니다:
 - 의미 있는 커밋 메시지 자동 생성
 ```
 
-## 데이터베이스
+### 예시 3: SkillsMP에서 검색
 
-스킬 정보는 [`external-skills-database.json`](../external-skills-database.json)에 저장됩니다.
+**입력:**
+```
+이미지 처리 스킬 찾아줘
+```
+
+**검색 과정:**
+1. 로컬 데이터베이스에서 "image" 키워드 검색 → 결과 없음
+2. SkillsMP API로 "image processing" 검색
+3. 인기도(stars) 순으로 정렬된 결과 제공
+
+**출력:**
+```
+"image processing"으로 SkillsMP에서 검색한 결과입니다:
+
+## 1. image-optimizer
+
+**설명**: AI-powered image optimization and conversion tool
+**제공자**: john-dev (커뮤니티)
+**인기도**: ⭐ 245
+**마켓플레이스**: image-tools-marketplace
+
+### 주요 기능
+- 이미지 자동 최적화 및 압축
+- 다양한 포맷 변환 (PNG, JPG, WebP, AVIF)
+- AI 기반 이미지 품질 향상
+
+### 설치 방법
+\`\`\`bash
+/plugin marketplace add john-dev/image-tools
+/plugin install image-optimizer@image-tools-marketplace
+\`\`\`
+
+더 많은 결과: https://skillsmp.com/search?q=image%20processing
+```
+
+## 데이터 소스
+
+### 로컬 데이터베이스
+
+스킬 정보는 [`external-skills-database.json`](skills/external-skills-database.json)에 저장됩니다.
 
 ### 데이터베이스 구조
 
@@ -162,12 +219,65 @@ Git 커밋 관련해서 두 가지 좋은 옵션이 있습니다:
 
 ### 새 스킬 추가
 
-새로운 스킬을 데이터베이스에 추가하려면:
+새로운 스킬을 로컬 데이터베이스에 추가하려면:
 
-1. `external-skills-database.json` 파일 편집
+1. `skills/external-skills-database.json` 파일 편집
 2. 적절한 카테고리에 스킬 정보 추가
 3. `searchIndex`에 키워드 등록
 4. Pull Request 생성
+
+### SkillsMP 검색 스크립트
+
+실시간 커뮤니티 스킬 검색을 위한 Python 스크립트:
+
+**스크립트 위치**: `scripts/search_skills.py`
+
+**사용 방법**:
+```bash
+python3 scripts/search_skills.py "[검색어]" --limit 5
+```
+
+**옵션**:
+| 옵션 | 설명 | 기본값 |
+|------|------|--------|
+| `--limit N` | 반환할 결과 수 | 10 |
+| `--page N` | 페이지 번호 | 1 |
+| `--sort` | 정렬 기준 (stars/recent/name) | stars |
+| `--format` | 출력 형식 (json/text) | json |
+
+**예시**:
+```bash
+# PDF 관련 스킬 검색
+python3 scripts/search_skills.py "pdf" --limit 5
+
+# Git 스킬을 최신순으로 검색
+python3 scripts/search_skills.py "git" --sort recent --limit 3
+```
+
+**응답 형식**:
+```json
+{
+  "success": true,
+  "query": "pdf",
+  "total": 479,
+  "skills": [
+    {
+      "name": "pdf",
+      "author": "anthropics",
+      "description": "PDF manipulation toolkit...",
+      "stars": 24530,
+      "githubUrl": "https://github.com/...",
+      "hasMarketplace": true
+    }
+  ]
+}
+```
+
+**장점**:
+- WebFetch 대비 토큰 사용량 대폭 감소
+- 필요한 정보만 간결하게 반환
+- 최신 커뮤니티 스킬 실시간 발견
+- 인기도 검증 (stars 기준)
 
 ## 고급 기능
 
@@ -205,7 +315,7 @@ Git 커밋 관련해서 두 가지 좋은 옵션이 있습니다:
 새로운 스킬 추가나 개선 제안은 환영합니다!
 
 1. 이슈 생성 또는 PR 제출
-2. `external-skills-database.json` 업데이트
+2. `skills/external-skills-database.json` 업데이트
 3. 스킬 정보 검증
 
 ## 라이선스
