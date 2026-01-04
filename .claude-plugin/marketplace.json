@@ -37,6 +37,11 @@
       "name": "figma-helper",
       "source": "./figma-helper",
       "description": "Figma Dev Mode MCP 도구를 활용한 디자인-코드 변환 지원 플러그인"
+    },
+    {
+      "name": "skill-finder",
+      "source": "./skill-finder",
+      "description": "유용한 외부 Claude Code 스킬과 플러그인을 찾아주는 대화형 도우미"
     }
   ]
 }
