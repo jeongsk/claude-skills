@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Figma Dev Mode MCP 도구를 활용한 디자인-코드 변환 지원 플러그인",
   "author": {
-    "name": "Claude Skills"
+    "name": "jeongsk"
   },
   "homepage": "https://developers.figma.com/docs/figma-mcp-server",
   "keywords": [

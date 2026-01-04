@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Feature-Sliced Design 아키텍처 개발 지원 플러그인 - 구조 생성, 규칙 검증, 마이그레이션 가이드",
   "author": {
-    "name": "Claude Skills"
+    "name": "jeongsk"
   },
   "homepage": "https://feature-sliced.design",
   "keywords": [
