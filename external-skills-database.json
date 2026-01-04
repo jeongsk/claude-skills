@@ -1,0 +1,308 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-04",
+  "categories": {
+    "official-skills": {
+      "name": "공식 스킬 (Anthropic)",
+      "description": "Anthropic에서 공식 제공하는 스킬 모음",
+      "skills": [
+        {
+          "id": "example-skills",
+          "name": "example-skills",
+          "displayName": "Example Skills",
+          "description": "Anthropic에서 제공하는 공식 예제 스킬 모음",
+          "provider": "Anthropic",
+          "marketplace": "anthropic-agent-skills",
+          "repository": "https://github.com/anthropics/anthropic-agent-skills",
+          "tags": ["official", "documents", "frontend", "development-tools"],
+          "features": [
+            {
+              "category": "문서 작업",
+              "items": [
+                "PDF 파일 생성/편집/분석",
+                "DOCX 문서 생성/편집",
+                "PPTX 프레젠테이션 생성/편집",
+                "XLSX 스프레드시트 생성/편집"
+              ]
+            },
+            {
+              "category": "프론트엔드",
+              "items": [
+                "React 컴포넌트 디자인",
+                "알고리즘 아트 생성 (p5.js)",
+                "캔버스 디자인",
+                "웹 아티팩트 빌더",
+                "테마 팩토리"
+              ]
+            },
+            {
+              "category": "개발 도구",
+              "items": [
+                "MCP 서버 빌더",
+                "웹앱 테스팅 (Playwright)",
+                "스킬 생성기"
+              ]
+            },
+            {
+              "category": "커뮤니케이션",
+              "items": [
+                "내부 문서 작성",
+                "Slack GIF 생성",
+                "브랜드 가이드라인 적용"
+              ]
+            }
+          ],
+          "installation": {
+            "commands": [
+              "/plugin marketplace add anthropic/example-skills",
+              "/plugin install example-skills@anthropic-agent-skills"
+            ],
+            "note": "설치 후 개별 스킬을 바로 사용할 수 있습니다."
+          },
+          "useCases": [
+            "문서 자동화가 필요한 프로젝트",
+            "프론트엔드 컴포넌트 빠른 프로토타이핑",
+            "MCP 서버 개발",
+            "비주얼 콘텐츠 생성"
+          ]
+        }
+      ]
+    },
+    "official-plugins": {
+      "name": "공식 플러그인",
+      "description": "Claude Code 공식 플러그인 모음",
+      "skills": [
+        {
+          "id": "plugin-dev",
+          "name": "plugin-dev",
+          "displayName": "Plugin Development",
+          "description": "Claude Code 플러그인 개발을 위한 종합 도구 모음",
+          "provider": "Claude Code Official",
+          "marketplace": "claude-plugins-official",
+          "tags": ["official", "development", "plugin-creation"],
+          "features": [
+            {
+              "category": "플러그인 개발",
+              "items": [
+                "플러그인 구조 생성 및 스캐폴딩",
+                "명령어(Command) 개발 가이드",
+                "에이전트(Agent) 생성 도구",
+                "스킬(Skill) 작성 지원",
+                "훅(Hook) 구현 가이드"
+              ]
+            },
+            {
+              "category": "통합 및 검증",
+              "items": [
+                "MCP 서버 통합 지원",
+                "플러그인 구조 검증",
+                "설정 파일 검증"
+              ]
+            }
+          ],
+          "installation": {
+            "commands": [
+              "/plugin marketplace add claude/plugins",
+              "/plugin install plugin-dev@claude-plugins-official"
+            ]
+          },
+          "useCases": [
+            "새로운 Claude Code 플러그인 개발",
+            "기존 플러그인 확장 및 개선",
+            "MCP 서버 연동"
+          ]
+        },
+        {
+          "id": "commit-commands",
+          "name": "commit-commands",
+          "displayName": "Commit Commands",
+          "description": "Git 작업을 간소화하는 커밋 관련 명령어 모음",
+          "provider": "Claude Code Official",
+          "marketplace": "claude-plugins-official",
+          "tags": ["official", "git", "productivity"],
+          "features": [
+            {
+              "category": "Git 작업",
+              "items": [
+                "스마트 커밋 메시지 생성 (/commit)",
+                "커밋, 푸시, PR 생성 일괄 처리 (/commit-push-pr)",
+                "삭제된 원격 브랜치 정리 (/clean_gone)"
+              ]
+            }
+          ],
+          "installation": {
+            "commands": [
+              "/plugin install commit-commands@claude-plugins-official"
+            ]
+          },
+          "useCases": [
+            "효율적인 Git 워크플로우",
+            "일관된 커밋 메시지 작성",
+            "브랜치 관리 자동화"
+          ]
+        },
+        {
+          "id": "feature-dev",
+          "name": "feature-dev",
+          "displayName": "Feature Development",
+          "description": "복잡한 기능 개발을 위한 가이드형 개발 도구",
+          "provider": "Claude Code Official",
+          "marketplace": "claude-plugins-official",
+          "tags": ["official", "development", "architecture"],
+          "features": [
+            {
+              "category": "개발 지원",
+              "items": [
+                "코드베이스 아키텍처 분석",
+                "단계별 기능 개발 가이드",
+                "기존 패턴 및 컨벤션 준수",
+                "종속성 추적 및 관리"
+              ]
+            }
+          ],
+          "installation": {
+            "commands": [
+              "/plugin install feature-dev@claude-plugins-official"
+            ]
+          },
+          "useCases": [
+            "대규모 기능 개발",
+            "레거시 코드베이스 이해",
+            "아키텍처 일관성 유지"
+          ]
+        },
+        {
+          "id": "pr-review-toolkit",
+          "name": "pr-review-toolkit",
+          "displayName": "PR Review Toolkit",
+          "description": "포괄적인 Pull Request 리뷰 도구 모음",
+          "provider": "Claude Code Official",
+          "marketplace": "claude-plugins-official",
+          "tags": ["official", "code-review", "quality"],
+          "features": [
+            {
+              "category": "코드 품질",
+              "items": [
+                "코드 스타일 및 컨벤션 검사",
+                "보안 취약점 분석",
+                "에러 처리 검증",
+                "사일런트 실패 탐지"
+              ]
+            },
+            {
+              "category": "테스트 및 타입",
+              "items": [
+                "테스트 커버리지 분석",
+                "타입 설계 리뷰",
+                "코드 복잡도 평가"
+              ]
+            },
+            {
+              "category": "문서",
+              "items": [
+                "코멘트 정확성 분석",
+                "문서화 품질 검증"
+              ]
+            }
+          ],
+          "installation": {
+            "commands": [
+              "/plugin install pr-review-toolkit@claude-plugins-official"
+            ]
+          },
+          "useCases": [
+            "PR 코드 리뷰 자동화",
+            "코드 품질 개선",
+            "보안 취약점 사전 탐지"
+          ]
+        },
+        {
+          "id": "code-review",
+          "name": "code-review",
+          "displayName": "Code Review",
+          "description": "Pull Request 코드 리뷰 플러그인",
+          "provider": "Claude Code Official",
+          "marketplace": "claude-plugins-official",
+          "tags": ["official", "code-review"],
+          "features": [
+            {
+              "category": "리뷰",
+              "items": [
+                "PR 코드 리뷰 수행"
+              ]
+            }
+          ],
+          "installation": {
+            "commands": [
+              "/plugin install code-review@claude-plugins-official"
+            ]
+          },
+          "useCases": [
+            "빠른 PR 리뷰"
+          ]
+        }
+      ]
+    },
+    "community-resources": {
+      "name": "커뮤니티 리소스",
+      "description": "커뮤니티에서 제공하는 유용한 리소스",
+      "skills": [
+        {
+          "id": "awesome-claude-code",
+          "name": "Awesome Claude Code",
+          "displayName": "Awesome Claude Code",
+          "description": "커뮤니티가 큐레이션한 Claude Code 리소스 모음",
+          "provider": "Community",
+          "repository": "https://github.com/topics/claude-code",
+          "tags": ["community", "resources", "curated-list"],
+          "features": [
+            {
+              "category": "리소스",
+              "items": [
+                "큐레이션된 플러그인 목록",
+                "스킬 컬렉션",
+                "튜토리얼 및 가이드",
+                "베스트 프랙티스"
+              ]
+            }
+          ],
+          "installation": {
+            "note": "GitHub에서 직접 탐색 가능"
+          },
+          "useCases": [
+            "새로운 플러그인 발견",
+            "커뮤니티 베스트 프랙티스 학습"
+          ]
+        }
+      ]
+    }
+  },
+  "searchIndex": {
+    "keywords": {
+      "pdf": ["example-skills"],
+      "excel": ["example-skills"],
+      "powerpoint": ["example-skills"],
+      "pptx": ["example-skills"],
+      "docx": ["example-skills"],
+      "문서": ["example-skills"],
+      "react": ["example-skills"],
+      "프론트엔드": ["example-skills"],
+      "디자인": ["example-skills"],
+      "git": ["commit-commands"],
+      "커밋": ["commit-commands"],
+      "commit": ["commit-commands", "code-review"],
+      "pr": ["pr-review-toolkit", "code-review"],
+      "리뷰": ["pr-review-toolkit", "code-review"],
+      "review": ["pr-review-toolkit", "code-review"],
+      "플러그인": ["plugin-dev"],
+      "plugin": ["plugin-dev"],
+      "개발": ["feature-dev", "plugin-dev"],
+      "development": ["feature-dev", "plugin-dev"],
+      "테스트": ["pr-review-toolkit"],
+      "test": ["pr-review-toolkit"],
+      "보안": ["pr-review-toolkit"],
+      "security": ["pr-review-toolkit"],
+      "mcp": ["plugin-dev", "example-skills"]
+    }
+  }
+}

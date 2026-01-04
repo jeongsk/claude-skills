@@ -1,0 +1,13 @@
+{
+  "name": "skill-finder",
+  "displayName": "Skill Finder",
+  "description": "유용한 외부 Claude Code 스킬과 플러그인을 찾아주는 대화형 도우미",
+  "version": "1.0.0",
+  "author": "jeongsk",
+  "skills": [
+    {
+      "name": "find-skills",
+      "path": "skills/find-skills.md"
+    }
+  ]
+}
