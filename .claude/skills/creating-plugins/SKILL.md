@@ -1,5 +1,5 @@
 ---
-name: plugin-creator
+name: creating-plugins
 description: Guide for creating Claude Code plugins with commands, agents, skills, hooks, and MCP servers. Use when the user wants to create a new plugin, add plugin components (commands, agents, hooks), set up a plugin marketplace, or needs help with plugin.json configuration.
 ---
 

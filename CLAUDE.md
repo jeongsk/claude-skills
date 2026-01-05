@@ -12,7 +12,7 @@ This is a Claude Code plugin marketplace repository containing multiple plugins 
 claude-skills/
 ├── .claude-plugin/marketplace.json  # Marketplace definition
 ├── .claude/                          # Project-level Claude Code config
-│   ├── skills/                       # Project skills (plugin-creator)
+│   ├── skills/                       # Project skills (creating-plugins)
 │   └── settings.json                 # Plugin settings
 ├── fsd-helper/                       # FSD architecture plugin
 ├── reactflow-helper/                 # React Flow plugin
@@ -104,10 +104,10 @@ System prompt and behavior instructions.
 
 ## References
 
-All plugin and skill development documentation is available in the `plugin-creator` skill:
+All plugin and skill development documentation is available in the `creating-plugins` skill:
 
 ```
-.claude/skills/plugin-creator/references/
+.claude/skills/creating-plugins/references/
 ├── plugins-guide.md          # Complete plugin creation guide
 ├── plugins-reference.md      # Technical schemas and configurations
 ├── plugin-structure.md       # Directory layout and plugin.json schema
