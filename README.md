@@ -149,6 +149,16 @@ Claude Code에서 다음 명령어를 실행합니다:
 
 유용한 외부 스킬과 플러그인은 [추천 플러그인 문서](./docs/recommended-plugins.md)를 참고하세요.
 
+## References
+
+- Agent Skills 개요: https://platform.claude.com/docs/ko/agents-and-tools/agent-skills/overview
+- Agent Skills 시작하기: https://platform.claude.com/docs/ko/agents-and-tools/agent-skills/quickstart
+- Skill 작성 모범 사례: https://platform.claude.com/docs/ko/agents-and-tools/agent-skills/best-practices
+- Claude Code 플러그인 개요: https://code.claude.com/docs/ko/plugins
+- Claude Code 플러그인 참조: https://code.claude.com/docs/ko/plugins-reference
+- 프롬프트 엔지니어링 개요: https://platform.claude.com/docs/ko/build-with-claude/prompt-engineering/overview
+- 프롬프트 작성 모범 사례: https://platform.claude.com/docs/ko/build-with-claude/prompt-engineering/claude-4-best-practices
+
 ## 라이선스
 
 [MIT License](./LICENSE)
